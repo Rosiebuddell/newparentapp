@@ -2,9 +2,17 @@
 console.log("firebase.js ready to roll!")
 
 //connect to the firebase db (database)
-  var config = {
-    apiKey: "AIzaSyDqCowWm_tfPP6BlQZIWiRCWzSwsD1dnFM",
-    databaseURL: "https://dynamic-web-template-e91d4.firebaseio.com"
+//  var config = {
+//    apiKey: "AIzaSyBN1dnlfox02roXWg7ChibcegRaIjjf5iA",
+//    databaseURL: "new-parent-app.firebaseapp.com",
+//  };
+//  firebase.initializeApp(config);
+var config = {
+    apiKey: "AIzaSyBN1dnlfox02roXWg7ChibcegRaIjjf5iA",
+    authDomain: "new-parent-app.firebaseapp.com",
+    databaseURL: "https://new-parent-app.firebaseio.com",
+    storageBucket: "new-parent-app.appspot.com",
+    messagingSenderId: "925310505884"
   };
   firebase.initializeApp(config);
 
@@ -15,8 +23,8 @@ var database = firebase.database();
 //ref=reference like path for files on computer
 var productsData = database.ref('products');
 
-//create a list of people
-var productsList = []; //empty list, for now
+//create a list of items
+var itemList = []; //empty list, for now
 
 //load all the children of 'products'
 //keep listening for new children
@@ -24,5 +32,6 @@ productsData.on('child_added', function(childData){
     //run these instructions for each child
     console.table( childData.val() );
     var product = childData.val(); //extract data about the product
-    productsList.push( product ); //add the product to the productsList
+    itemList.push( product ); //add the product to the itemList
 })
+

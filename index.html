@@ -13,7 +13,16 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
+        
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/filter.js"></script>
+        <script src="js/show.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -24,7 +33,7 @@
         
         <!--        this is the home section-->
         <section id="home">
-            <img id="logo" src="img/logoposs.png">
+            <img id="logo" src="img/babyonboardlogo.png">
             <h1>I want to look at...</h1>
             <select>
                 <option value="pushchairs">Pushchairs</option>
@@ -39,6 +48,7 @@
 -->
             </select>
             <button>Go</button>
+<!--
             <h1>My child is...</h1>
             <select>
                 <option value="newborn">Newborn</option>
@@ -52,6 +62,7 @@
                 <option value="4Years">4+ Years</option>
             </select>
             <button>Go</button>
+-->
             <p>Find products to suit yours and your baby's needs</p>
             <p>Pick a section to get started</p>
             
@@ -101,17 +112,10 @@
             </div>
         </section>
         
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
-        <script src="js/firebase.js"></script>
-        <script src="js/filter.js"></script>
-        <script src="js/show.js"></script>
         <script src="js/main.js"></script>
         
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -120,5 +124,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+-->
     </body>
 </html>

@@ -11,7 +11,6 @@ var detailsSection = $('#details')
 var detailsBackButton =$('#details .back')
 
 // tell the button to do something when we click it
-//ask matteo wtf the empty brackets are about
 homeGoButton.click( function(){
     
     //capture the user chosen option
@@ -19,7 +18,7 @@ homeGoButton.click( function(){
     console.log("You picked " + chosenOption)
     
     // filter+sort people by user selection
-    var resultsList = filterAndSortList(productsList, chosenOption);
+    var resultsList = filterAndSortList(itemList, 'category', chosenOption);
     console.log(resultsList);
     
     // show the results in the #results section
