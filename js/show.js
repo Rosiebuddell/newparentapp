@@ -31,9 +31,9 @@ function makeDetailsHTML (data)
   */
 
   var html = '<h2>' + data.name  + '</h2>' 
-  + '<img src="' + data.image + '">' 
+  + '<img src="' + data.image + '">'
+  + '<p>' Price + data.price + '<p>'
   + '<p>' + data.about + '</p>'
-  + '<a class="contact button">Contact ' + data.name + '</a>'
 
   return html;        
 }

@@ -1,7 +1,10 @@
 html {
     font-family: 'PT Sans Narrow', sans-serif;
+/*
     background-image: url("https://images.unsplash.com/photo-1470843810958-2da815d0e041?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=556a459fa3e22958c1a9839501dc5fda");
     background-size: 100%;
+    background-attachment: fixed;
+*/
 }
 
 /* hide the results and details by default*/
