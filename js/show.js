@@ -8,7 +8,7 @@ function makeListItemHTML (data, index)
         <h2>Matteo</h2>
     </li>
   */
-
+    '<h1> I want to look at ' + data.category + '</h1>'
   // li = List Item
   var li  = '<li id="' + index + '">'
   + '<img src="' + data.image + '">' 
