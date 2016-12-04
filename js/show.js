@@ -13,6 +13,9 @@ function makeListItemHTML (data, index)
   var li  = '<li id="' + index + '">'
   + '<img src="' + data.image + '">' 
   + '<h2>' + data.name + '</h2>'
+  + '<h3> Suitable from ' + data.suitableAge + '</h3>'
+  + '<h3> £' + data.price + '</h3>'
+  + '<h3> Average Star Rating: ' + data.starRating + '</h3>'
   + '</li>'
 
   return li;        
